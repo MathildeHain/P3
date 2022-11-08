@@ -23,7 +23,7 @@
   border-radius: 30px;
   border: none;
   box-shadow: 4px 4px 10px #d6d6d6;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
   width: 75%;
   align-self: center;
 }
@@ -77,4 +77,43 @@ header .header__localisation .localisation__formulaire .localisation__input::pla
 }
 .top .top__texte {
   font-weight: 300;
+}
+
+/*------Fonctionnement------*/
+.fonctionnement {
+  padding: 45px 20px;
+}
+.fonctionnement .fonctionnement__liste {
+  list-style: none;
+  counter-reset: li;
+  font-size: 11px;
+  font-weight: 700;
+}
+.fonctionnement .fonctionnement__liste .liste__element {
+  background: #f7f7f7;
+  padding: 20px;
+  margin: 25px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px #d6d6d6;
+}
+.fonctionnement .fonctionnement__liste .liste__element::before {
+  content: counter(li);
+  counter-increment: li;
+  color: white;
+  display: inline-block;
+  margin-left: -2.8em;
+  padding: 4px 8px;
+  background: #9356DC;
+  text-align: center;
+  border-radius: 10px;
+}
+.fonctionnement .fonctionnement__liste .liste__element .element {
+  font-size: 16px;
+}
+.fonctionnement .fonctionnement__liste .liste__element .element__icone {
+  margin: 0 10px;
+  color: #787878;
+}
+.fonctionnement .fonctionnement__liste .liste__element .element__icone--primaire {
+  color: #9356DC;
 }/*# sourceMappingURL=main.css.map */
