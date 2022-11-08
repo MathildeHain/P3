@@ -93,3 +93,101 @@ padding: 45px 20px;
         }
     }
 }
+
+/*------Restaurants------*/
+.restaurant {
+    padding: 45px 20px;
+    background: $quaternaire;
+
+    .restaurant__carte {
+        margin: 30px 0;
+        box-shadow: 4px 4px 10px #d6d6d6;
+        border-radius: 20px 20px 0 0;
+        background: #FFFFFF;
+        border-radius: 20px;
+
+        .carte__lien {
+            text-decoration: none;
+            color: #000000;
+
+            .lien__nouveau {
+                position: absolute;
+                left: 206px;
+                margin-top: 18px;
+                padding: 4px 12px;
+                background: #99e2d0;
+                color: #139273;
+                border-radius: 3px;
+                font-weight: 500;
+            }
+
+            .lien__info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #FFFFFF;
+                border-radius: 20px;
+
+                .info__texte {
+                    padding: 15px;
+                }
+
+                .info__texte h3, p {
+                    margin-bottom: 5px;
+                }
+
+                .info__icone {
+                    font-size: 20px;
+                    margin-right: 25px;
+                }
+
+                .info__icone i:hover {
+                    background: linear-gradient(to top, $primaire, $secondaire);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                }
+            }
+        }
+
+        .carte__lien img {
+            width: 100%;
+            height: 165px;    
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+    } 
+}
+
+/*------------
+    FOOTER
+-------------*/
+footer {
+    background: #353535;
+    color: #FFFFFF;
+    padding: 25px 0 30px 25px;
+    color: #e5e5e5;
+
+    h2 {
+        font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        padding-bottom: 15px;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+
+        i {
+            margin-right: 15px;
+        }
+    }
+}
