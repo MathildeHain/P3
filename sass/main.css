@@ -10,4 +10,37 @@
 }
 * h1 {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+}
+
+/*-------------
+    COULEURS
+-------------*/
+/*------------
+    HEADER
+-------------*/
+header {
+  text-align: center;
+  /*Formulaire*/
+}
+header .header__localisation {
+  background: linear-gradient(to bottom, #d4d4d4, 2%, #eaeaea 9%);
+}
+header .header__localisation .localisation__formulaire {
+  padding: 10px 0;
+}
+header .header__localisation .localisation__formulaire .localisation__input {
+  background: #eaeaea;
+  border: none;
+}
+header .header__localisation .localisation__formulaire .localisation__input::-moz-placeholder {
+  color: black;
+  font-weight: 400;
+}
+header .header__localisation .localisation__formulaire .localisation__input:-ms-input-placeholder {
+  color: black;
+  font-weight: 400;
+}
+header .header__localisation .localisation__formulaire .localisation__input::placeholder {
+  color: black;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

@@ -1,1 +1,31 @@
 @import "./base/font";
+@import "./utils/variables";
+
+
+/*------------
+    HEADER
+-------------*/
+header {
+    text-align: center;
+
+    /*Formulaire*/
+    .header__localisation {
+        background: linear-gradient(to bottom, #d4d4d4, 2%, #eaeaea 9%);
+
+        .localisation__formulaire {
+            padding: 10px 0;
+
+            .localisation__input {
+                background: #eaeaea;
+                border: none;
+            }
+    
+            .localisation__input::placeholder {
+                color: black;
+                font-weight: 400;
+            }
+        }
+
+        
+    }
+}
