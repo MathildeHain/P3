@@ -1,5 +1,6 @@
 @import "./base/font";
 @import "./utils/variables";
+@import "./components/boutons";
 
 
 /*------------
@@ -27,5 +28,25 @@ header {
         }
 
         
+    }
+}
+
+
+/*----------
+    MAIN
+----------*/
+
+/*------TOP------*/
+.top {
+    background: $quaternaire;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 200px;
+    padding: 24px;
+
+    .top__texte {
+        font-weight: 300;
     }
 }
