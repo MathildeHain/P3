@@ -218,8 +218,8 @@ footer .footer__liens a p {
 }
 
 /*------Fonctionnement------*/
-.fonctionnement {
-  padding: 45px 20px;
+.fonctionnement .fonctionnement__titre {
+  padding: 30px 0 0 20px;
 }
 .fonctionnement .fonctionnement__liste {
   list-style: none;
@@ -233,6 +233,9 @@ footer .footer__liens a p {
   margin: 25px;
   border-radius: 20px;
   box-shadow: 4px 4px 10px #d6d6d6;
+}
+.fonctionnement .fonctionnement__liste .liste__element:hover {
+  background: #f5edff;
 }
 .fonctionnement .fonctionnement__liste .liste__element::before {
   content: counter(li);
@@ -252,14 +255,16 @@ footer .footer__liens a p {
   margin: 0 10px;
   color: #787878;
 }
-.fonctionnement .fonctionnement__liste .liste__element .element__icone--primaire {
+.fonctionnement .fonctionnement__liste .liste__element:hover .element__icone {
   color: #9356DC;
 }
 
 /*------Restaurants------*/
 .restaurant {
-  padding: 45px 20px;
   background: #f7f7f7;
+}
+.restaurant .restaurant__titre {
+  padding: 30px 0 0 20px;
 }
 .restaurant .restaurant__articles .restaurant__carte {
   margin: 30px 0;
