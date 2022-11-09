@@ -1,0 +1,14 @@
+/*-----------
+    COEUR
+------------*/
+.info__icone {
+    font-size: 20px;
+    margin-right: 25px;
+
+    i:hover::before{
+        background: linear-gradient(to top, $primaire, $secondaire);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
