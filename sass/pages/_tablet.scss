@@ -1,0 +1,44 @@
+@media screen and (min-width:768px) and (max-width:991px) {
+
+/*--------------------
+    FONCTIONNEMENT
+---------------------*/
+.fonctionnement {
+    .fonctionnement__liste {
+        display: flex;
+    }
+} 
+
+/*---------------
+    RESTAURANT
+----------------*/
+.restaurant {
+    .restaurant__articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .restaurant__carte {
+            width: 45%;
+        }
+    }
+}
+
+
+/*------------
+    FOOTER
+-------------*/
+footer {
+    padding: 30px 0;
+
+    .footer__titre {
+        padding: 0 0 15px 25px;
+    }
+
+    .footer__liens {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+}
