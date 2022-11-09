@@ -126,44 +126,64 @@ footer .footer__liens a p {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /*--------------------
-      FONCTIONNEMENT
-  ---------------------*/
+/*-------------------------
+    TABLETTE ET DESKTOP
+--------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+  /*----HEADER----*/
+  header .header__titre {
+    padding: 20px;
+  }
+  header .header__localisation {
+    padding: 10px;
+  }
+  /*----MAIN----*/
+  /*Top*/
+  .top .top__bouton {
+    width: 30%;
+  }
+  /*Fonctionnement*/
   .fonctionnement .fonctionnement__liste {
     display: flex;
   }
-  /*---------------
-      RESTAURANT
-  ----------------*/
+  /*Restaurants*/
   .restaurant .restaurant__articles {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
   }
-  .restaurant .restaurant__articles .restaurant__carte {
-    width: 45%;
-  }
-  /*------------
-      FOOTER
-  -------------*/
+  /*----FOOTER----*/
   footer {
     padding: 30px 0;
-  }
-  footer .footer__titre {
-    padding: 0 0 15px 25px;
   }
   footer .footer__liens {
     display: flex;
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 992px) {
-  /*-------------------
-      FONCTIONNEMENT
-  --------------------*/
+/*--------------
+    TABLETTE
+---------------*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /*----MAIN----*/
+  /*Restaurants*/
+  .restaurant .restaurant__articles {
+    flex-wrap: wrap;
+  }
+  .restaurant .restaurant__articles .restaurant__carte {
+    width: 45%;
+  }
+  /*----FOOTER----*/
+  footer .footer__titre {
+    padding: 0 0 15px 25px;
+  }
+}
+/*-------------
+    DESKTOP
+--------------*/
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+  /*----MAIN----*/
+  /*Fonctionnement*/
   .fonctionnement .fonctionnement__liste {
-    display: flex;
     justify-content: space-around;
   }
   .fonctionnement .fonctionnement__liste .liste__element {
@@ -171,28 +191,13 @@ footer .footer__liens a p {
     -moz-text-align-last: center;
          text-align-last: center;
   }
-  /*-----------------
-      RESTAURANTS
-  ------------------*/
-  .restaurant .restaurant__articles {
-    display: flex;
-    justify-content: space-around;
-  }
+  /*Restaurants*/
   .restaurant .restaurant__articles .restaurant__carte {
     width: 23%;
   }
-  /*------------
-      FOOTER
-  -------------*/
-  footer {
-    padding: 30px 0;
-  }
+  /*----FOOTER----*/
   footer .footer__titre {
     display: none;
-  }
-  footer .footer__liens {
-    display: flex;
-    justify-content: space-around;
   }
 }
 /*----------
