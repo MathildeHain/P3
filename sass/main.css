@@ -110,6 +110,20 @@ footer div i {
   margin-right: 15px;
 }
 
+/*-----------
+    COEUR
+------------*/
+.info__icone {
+  font-size: 20px;
+  margin-right: 25px;
+}
+.info__icone i:hover::before {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*----------
     MAIN
 ----------*/
@@ -196,16 +210,6 @@ footer div i {
 }
 .restaurant .restaurant__carte .carte__lien .lien__info .info__texte h3, .restaurant .restaurant__carte .carte__lien .lien__info p {
   margin-bottom: 5px;
-}
-.restaurant .restaurant__carte .carte__lien .lien__info .info__icone {
-  font-size: 20px;
-  margin-right: 25px;
-}
-.restaurant .restaurant__carte .carte__lien .lien__info .info__icone i:hover {
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .restaurant .restaurant__carte .carte__lien img {
   width: 100%;

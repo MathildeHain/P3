@@ -3,6 +3,7 @@
 @import "./components/boutons";
 @import "./layouts/header";
 @import "./layouts/footer";
+@import "./utils/animations";
 
 /*----------
     MAIN
@@ -97,19 +98,6 @@ padding: 45px 20px;
 
                 .info__texte h3, p {
                     margin-bottom: 5px;
-                }
-
-                .info__icone {
-                    font-size: 20px;
-                    margin-right: 25px;
-                }
-
-                .info__icone i:hover {
-                    background: linear-gradient(to top, $primaire, $secondaire);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    
                 }
             }
         }
