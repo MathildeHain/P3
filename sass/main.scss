@@ -1,36 +1,8 @@
 @import "./base/font";
 @import "./utils/variables";
 @import "./components/boutons";
-
-
-/*------------
-    HEADER
--------------*/
-header {
-    text-align: center;
-
-    /*Formulaire*/
-    .header__localisation {
-        background: linear-gradient(to bottom, #d4d4d4, 2%, #eaeaea 9%);
-
-        .localisation__formulaire {
-            padding: 10px 0;
-
-            .localisation__input {
-                background: #eaeaea;
-                border: none;
-            }
-    
-            .localisation__input::placeholder {
-                color: black;
-                font-weight: 400;
-            }
-        }
-
-        
-    }
-}
-
+@import "./layouts/header";
+@import "./layouts/footer";
 
 /*----------
     MAIN
@@ -158,36 +130,4 @@ padding: 45px 20px;
             border-radius: 20px 20px 0 0;
         }
     } 
-}
-
-/*------------
-    FOOTER
--------------*/
-footer {
-    background: #353535;
-    color: #FFFFFF;
-    padding: 25px 0 30px 25px;
-    color: #e5e5e5;
-
-    h2 {
-        font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
-        font-weight: normal;
-        font-size: 20px;
-        padding-bottom: 15px;
-        color: #FFFFFF;
-    }
-
-    p {
-        font-size: 15px;
-        line-height: 30px;
-    }
-
-    div {
-        display: flex;
-        align-items: center;
-
-        i {
-            margin-right: 15px;
-        }
-    }
 }
