@@ -218,8 +218,8 @@ footer .footer__liens a p {
 }
 
 /*------Fonctionnement------*/
-.fonctionnement {
-  padding: 45px 20px;
+.fonctionnement .fonctionnement__titre {
+  padding: 30px 0 0 20px;
 }
 .fonctionnement .fonctionnement__liste {
   list-style: none;
@@ -258,8 +258,10 @@ footer .footer__liens a p {
 
 /*------Restaurants------*/
 .restaurant {
-  padding: 45px 20px;
   background: #f7f7f7;
+}
+.restaurant .restaurant__titre {
+  padding: 30px 0 0 20px;
 }
 .restaurant .restaurant__articles .restaurant__carte {
   margin: 30px 0;

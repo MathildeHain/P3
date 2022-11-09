@@ -2,6 +2,7 @@
 
 @import "./utils/variables";
 @import "./utils/animations";
+@import "./utils/mixins";
 
 @import "./components/boutons";
 
@@ -33,7 +34,10 @@
 
 /*------Fonctionnement------*/
 .fonctionnement {
-padding: 45px 20px;
+
+    .fonctionnement__titre {
+        @include heading-padding;
+    }
 
     .fonctionnement__liste {
         list-style: none;
@@ -76,8 +80,11 @@ padding: 45px 20px;
 
 /*------Restaurants------*/
 .restaurant {
-    padding: 45px 20px;
     background: $quaternaire;
+
+    .restaurant__titre {
+        @include heading-padding;
+    }
 
     .restaurant__articles {
         .restaurant__carte {
