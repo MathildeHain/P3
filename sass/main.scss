@@ -34,23 +34,28 @@
 
 /*------Fonctionnement------*/
 .fonctionnement {
-
+    //Titre
     .fonctionnement__titre {
         @include heading-padding;
     }
-
+    //Liste (ol)
     .fonctionnement__liste {
         list-style: none;
         counter-reset: li;
         font-size: 11px;
         font-weight: 700;
-
+        //Liste (li)
         .liste__element {
             background: $quaternaire;
             padding: 20px;
             margin: 25px;
             border-radius: 20px;
-            box-shadow: 4px 4px 10px #d6d6d6;
+            box-shadow: 4px 4px 10px #d6d6d6;   
+            //Changement de couleur du fond au survol
+            &:hover {
+                background: #f5edff;
+            }
+            //Création et stylisation de la numérotation
             &::before {
                 content: counter(li); 
                 counter-increment: li;
@@ -62,18 +67,19 @@
                 text-align: center;
                 border-radius: 10px;
             }
-
+            //Taille et mise en forme des éléments présents dans li
             .element {
                 font-size: 16px;
             }
-    
             .element__icone {
                 margin: 0 10px;
                 color: #787878;
             }
-            .element__icone--primaire {
+            //Changement de couleur de l'icône lors du survol
+            &:hover .element__icone{
                 color: $primaire;
             }
+
         }
     }
 }

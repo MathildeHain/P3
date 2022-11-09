@@ -234,6 +234,9 @@ footer .footer__liens a p {
   border-radius: 20px;
   box-shadow: 4px 4px 10px #d6d6d6;
 }
+.fonctionnement .fonctionnement__liste .liste__element:hover {
+  background: #f5edff;
+}
 .fonctionnement .fonctionnement__liste .liste__element::before {
   content: counter(li);
   counter-increment: li;
@@ -252,7 +255,7 @@ footer .footer__liens a p {
   margin: 0 10px;
   color: #787878;
 }
-.fonctionnement .fonctionnement__liste .liste__element .element__icone--primaire {
+.fonctionnement .fonctionnement__liste .liste__element:hover .element__icone {
   color: #9356DC;
 }
 
