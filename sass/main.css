@@ -158,6 +158,43 @@ footer .footer__liens a p {
     justify-content: space-around;
   }
 }
+@media screen and (min-width: 992px) {
+  /*-------------------
+      FONCTIONNEMENT
+  --------------------*/
+  .fonctionnement .fonctionnement__liste {
+    display: flex;
+    justify-content: space-around;
+  }
+  .fonctionnement .fonctionnement__liste .liste__element {
+    width: 100%;
+    -moz-text-align-last: center;
+         text-align-last: center;
+  }
+  /*-----------------
+      RESTAURANTS
+  ------------------*/
+  .restaurant .restaurant__articles {
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurant .restaurant__articles .restaurant__carte {
+    width: 23%;
+  }
+  /*------------
+      FOOTER
+  -------------*/
+  footer {
+    padding: 30px 0;
+  }
+  footer .footer__titre {
+    display: none;
+  }
+  footer .footer__liens {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 /*----------
     MAIN
 ----------*/
