@@ -4,6 +4,9 @@
 .info__icone {
     font-size: 20px;
     margin-right: 25px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 
     i:hover::before{
         background: linear-gradient(to top, $primaire, $secondaire);

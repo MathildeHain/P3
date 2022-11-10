@@ -21,6 +21,9 @@
 .info__icone {
   font-size: 20px;
   margin-right: 25px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .info__icone i:hover::before {
   background: linear-gradient(to top, #9356DC, #FF79DA);
