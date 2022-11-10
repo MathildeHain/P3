@@ -19,17 +19,20 @@
     COEUR
 ------------*/
 .info__icone {
-  font-size: 20px;
-  margin-right: 25px;
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  margin-right: 15px;
 }
-.info__icone i:hover::before {
+.info__icone .coeurVide:hover {
+  display: none;
+}
+.info__icone .coeurVide:hover ~ .coeurPlein {
+  display: block;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.info__icone .coeurPlein {
+  display: none;
 }
 
 /*-------------------
