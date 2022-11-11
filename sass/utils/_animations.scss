@@ -2,15 +2,14 @@
     COEUR
 ------------*/
 .info__icone {
+    position: relative;
     margin-right: 15px;
-    
-    .coeurVide {
+    .coeurPlein {
+        opacity: 0;
+        position: absolute;
+        transition: opacity 1s;
         &:hover {
-            display: none;
-        }
-
-        &:hover ~ .coeurPlein {
-            display: block;
+            opacity: 1;
             background: linear-gradient(to top, $primaire, $secondaire);
             background-clip: text;
             -webkit-background-clip: text;
@@ -18,7 +17,7 @@
         }
     }
 
-    .coeurPlein {
-        display: none;
+    .coeurVide {
+       z-index: 1;
     }
 }

@@ -19,20 +19,23 @@
     COEUR
 ------------*/
 .info__icone {
+  position: relative;
   margin-right: 15px;
 }
-.info__icone .coeurVide:hover {
-  display: none;
+.info__icone .coeurPlein {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s;
 }
-.info__icone .coeurVide:hover ~ .coeurPlein {
-  display: block;
+.info__icone .coeurPlein:hover {
+  opacity: 1;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.info__icone .coeurPlein {
-  display: none;
+.info__icone .coeurVide {
+  z-index: 1;
 }
 
 /*-------------------
