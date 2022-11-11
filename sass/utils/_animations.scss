@@ -2,13 +2,22 @@
     COEUR
 ------------*/
 .info__icone {
-    font-size: 20px;
-    margin-right: 25px;
+    position: relative;
+    margin-right: 15px;
+    .coeurPlein {
+        opacity: 0;
+        position: absolute;
+        transition: opacity 1s;
+        &:hover {
+            opacity: 1;
+            background: linear-gradient(to top, $primaire, $secondaire);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
 
-    i:hover::before{
-        background: linear-gradient(to top, $primaire, $secondaire);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    .coeurVide {
+       z-index: 1;
     }
 }
