@@ -15,6 +15,9 @@
 /*-------------
     COULEURS
 -------------*/
+/*---------------
+    ANIMATIONS
+-----------------*/
 /*-----------
     COEUR
 ------------*/
@@ -36,6 +39,77 @@
 }
 .info__icone .coeurVide {
   z-index: 1;
+}
+
+/*----------------------------
+    APPARITION DES PLATS
+-----------------------------*/
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.carte__info {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.delay1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.delay2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.delay3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.delay4 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.delay5 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.delay6 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.delay7 {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+
+.delay8 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.delay9 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 
 /*-------------------
