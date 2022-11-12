@@ -5,152 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À la française</title>
-    <link rel="stylesheet" href="../sass/style.css" type="text/css">
-    <link rel="stylesheet" href="../sass/palette.css" type="text/css">
-    <link rel="stylesheet" href="../sass/animation.css" type="text/css" >
+    <link rel="stylesheet" href="../sass/main.css" type="text/css">
     <script src="https://kit.fontawesome.com/e9938cafc4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header class="header__restaurant">
         <h1>ohmyfood</h1>
         <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
     </header>
 
-    <main>
-        <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+    <main class="main__restaurant">
+        <img class="img__restaurant" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
 
-        <div class="main__restaurant">
+        <div class="container__restaurant">
             <section class="restaurant__titre">
                 <h2>À la française</h2>
-                <span><i class="titre__icone fa-solid fa-heart"></i></span>
+                <span class="info__icone">
+                    <i class="fa-solid fa-heart coeurPlein"></i>
+                    <i class="fa-regular fa-heart coeurVide"></i>
+                </span>
             </section>
 
             <section class="restaurant__carte">
                 <h3 class="carte__titre"><span>ENTR</span>EES</h3>
                 <article class="carte__info">
                     <div class="info__texte">
-                        <div class="texte__intitulé">
-                            <h4 class="intitulé__titre">Tartare de poulpe acidulé</h4>
-                            <p class="intitulé__p">Aux zestes d'orange</p>
-                        </div>
-                        <span class="texte__prix">25€</span>
+                        <h4 class="texte__titre">Tartare de poulpe acidulé</h4>
+                        <p class="texte__p">Aux zestes d'orange</p>
                     </div>
+                    <span class="info__prix">25€</span>
                     <span class="info__icone"><i class="fa-solid fa-check"></i></span>
                 </article>
 
                 <article class="carte__info">
                     <div class="info__texte">
-                        <div class="texte__intitulé">
-                            <h4 class="intitulé__titre">Velouté de légumes d'antan</h4>
-                            <p class="intitulé__p">Carotte, panais, topinambour</p>
-                        </div>
-                        <span class="texte__prix">35€</span>
+                        <h4 class="texte__titre">Velouté de légumes d'antan</h4>
+                        <p class="texte__p">Carotte, panais, topinambour</p>
                     </div>
+                    <span class="info__prix">35€</span>
                     <span class="info__icone"><i class="fa-solid fa-check"></i></span>
                 </article>
 
                 <article class="carte__info">
                     <div class="info__texte">
-                        <div class="texte__intitulé">
-                            <h4 class="intitulé__titre">Soupe à l'oignon</h4>
-                            <p class="intitulé__p">Revisitée</p>
-                        </div>
-                        <span class="texte__prix">20€</span>
+                        <h4 class="texte__titre">Soupe à l'oignon</h4>
+                        <p class="texte__p">Revisitée</p>
                     </div>
+                    <span class="info__prix">20€</span>
                     <span class="info__icone"><i class="fa-solid fa-check"></i></span>
                 </article>
             </section>
 
             <section class="restaurant__carte">
-                <h3 class="carte__titre carte__titre--left"><span>PLAT</span>S</h3>
+                <h3 class="carte__titre"><span>PLAT</span>S</h3>
                 <article class="carte__info">
                     <div class="info__texte">
-                        <div class="texte__intitulé">
-                            <h4 class="intitulé__titre">Coquilles Saint-Jacques</h4>
-                            <p class="intitulé__p">Accompagnées d'une purée de panais</p>
-                        </div>
-                        <span class="texte__prix">40€</span>
+                        <h4 class="texte__titre">Coquilles Saint-Jacques</h4>
+                        <p class="texte__p">Accompagnées d'une purée de panais</p>
                     </div>
+                    <span class="info__prix">40€</span>
                     <span class="info__icone"><i class="fa-solid fa-check"></i></span>
                 </article>
 
                 <article class="carte__info">
                     <div class="info__texte">
-                        <div class="texte__intitulé">
-                            <h4 class="intitulé__titre">Magret de canard</h4>
-                            <p class="intitulé__p">Et parmentier de pommes de terre</p>
-                        </div>
-                        <span class="texte__prix">35€</span>
+                        <h4 class="texte__titre">Magret de canard</h4>
+                        <p class="texte__p">Et parmentier de pommes de terre</p>
                     </div>
+                    <span class="info__prix">35€</span>
                     <span class="info__icone"><i class="fa-solid fa-check"></i></span>
                 </article>
 
                 <article class="carte__info">
                     <div class="info__texte">
-                        <div class="texte__intitulé">
-                            <h4 class="intitulé__titre">Pigeonneau d’Ille-et-Vilaine</h4>
-                            <p class="intitulé__p">Sur son lit de gnocchis aux légumes</p>
-                        </div>
-                        <span class="texte__prix">44€</span>
+                        <h4 class="texte__titre">Pigeonneau d’Ille-et-Vilaine</h4>
+                        <p class="texte__p">Sur son lit de gnocchis aux légumes</p>
                     </div>
+                    <span class="info__prix">44€</span>
                     <span class="info__icone"><i class="fa-solid fa-check"></i></span>
                 </article>
             </section>
 
-            <section class="restaurant__carte restaurant__carte--bottom">
+            <section class="restaurant__carte">
                 <h3 class="carte__titre"><span>DESS</span>ERTS</h3>
                 <article class="carte__info">
                     <div class="info__texte">
-                        <div class="texte__intitulé">
-                            <h4 class="intitulé__titre">Pétales de violettes glacés</h4>
-                            <p class="intitulé__p">Et purée de noisettes</p>
-                        </div>
-                        <span class="texte__prix">18€</span>
+                        <h4 class="texte__titre">Pétales de violettes glacés</h4>
+                        <p class="texte__p">Et purée de noisettes</p>
                     </div>
+                    <span class="info__prix">18€</span>
                     <span class="info__icone"><i class="fa-solid fa-check"></i></span>
                 </article>
 
                 <article class="carte__info">
                     <div class="info__texte">
-                        <div class="texte__intitulé">
-                            <h4 class="intitulé__titre">Fondant au chocolat</h4>
-                            <p class="intitulé__p">Revisité</p>
-                        </div>
-                        <span class="texte__prix">22€</span>
+                        <h4 class="texte__titre">Fondant au chocolat</h4>
+                        <p class="texte__p">Revisité</p>
                     </div>
+                    <span class="info__prix">22€</span>
                     <span class="info__icone"><i class="fa-solid fa-check"></i></span>
                 </article>
 
                 <article class="carte__info">
                     <div class="info__texte">
-                        <div class="texte__intitulé">
-                            <h4 class="intitulé__titre">Millefeuille croustillant</h4>
-                            <p class="intitulé__p">Myrtilles et pâte d’amande</p>
-                        </div>
-                        <span class="texte__prix">23€</span>
+                        <h4 class="texte__titre">Millefeuille croustillant</h4>
+                        <p class="texte__p">Myrtilles et pâte d’amande</p>
                     </div>
+                    <span class="info__prix">23€</span>
                     <span class="info__icone"><i class="fa-solid fa-check"></i></span>
                 </article>
             </section>
         </div>
 
         <div class="main__bouton">
-            <button class="bouton boutonCommander">Commander</button>
+            <button class="bouton__couleur bouton__commander">Commander</button>
         </div>
     </main>
 
     <footer>
-        <h2>ohmyfood</h2>
-        <div>
-            <span><i class="fa-solid fa-utensils"></i></span>
-            <p>Proposer un restaurant</p>
+        <h2 class="footer__titre">ohmyfood</h2>
+        <div class="footer__liens">
+            <a href="#">
+                <span><i class="fa-solid fa-utensils"></i></span>
+                <p>Proposer un restaurant</p>
+            </a>
+    
+            <a href="#">
+                <span><i class="fa-solid fa-handshake-angle"></i></span>
+                <p>Devenir partenaire</p>
+            </a>
+    
+            <a href="#">
+                Mentions légales
+            </a>
+    
+            <a href="#">
+                Contact
+            </a>
         </div>
-        <div>
-            <span><i class="fa-solid fa-handshake-angle"></i></span>
-            <p>Devenir partenaire</p>
-        </div>
-        <p>MentionsLégales</p>
-        <p>Contact</p>
     </footer>
 </body>
 </html>
