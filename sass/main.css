@@ -41,7 +41,7 @@
 /*-------------------
     BOUTON COULEUR
 --------------------*/
-.top__bouton {
+.bouton__couleur {
   background: linear-gradient(-10deg, #9356DC, #FF79DA);
   color: white;
   padding: 15px 0;
@@ -53,7 +53,7 @@
   width: 75%;
   align-self: center;
 }
-.top__bouton:hover {
+.bouton__couleur:hover {
   box-shadow: 4px 4px 10px #959595;
   filter: opacity(0.8);
 }
@@ -209,6 +209,96 @@ footer .footer__liens a p {
     display: none;
   }
 }
+/*-----------------
+    RESTAURANTS
+------------------*/
+/*------------
+    HEADER
+--------------*/
+.header__restaurant {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+.header__restaurant a {
+  position: absolute;
+  left: 30px;
+  font-size: 20px;
+}
+.header__restaurant a:visited {
+  color: black;
+}
+
+/*----------
+    MAIN
+-----------*/
+.main__restaurant {
+  background: #f7f7f7;
+}
+.main__restaurant .img__restaurant {
+  max-width: 100%;
+}
+.main__restaurant .container__restaurant {
+  background: #f7f7f7;
+  position: relative;
+  top: -50px;
+  border-radius: 40px 40px 0 0;
+}
+.main__restaurant .container__restaurant .restaurant__titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 10px 15px;
+}
+.main__restaurant .container__restaurant .restaurant__titre h2 {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.main__restaurant .container__restaurant .restaurant__carte {
+  padding: 10px;
+}
+.main__restaurant .container__restaurant .restaurant__carte .carte__titre {
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.main__restaurant .container__restaurant .restaurant__carte .carte__titre span {
+  border-bottom: 3.5px solid #99E2D0;
+  padding-bottom: 5px;
+}
+.main__restaurant .container__restaurant .restaurant__carte .carte__info {
+  background: white;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px #d6d6d6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__restaurant .container__restaurant .restaurant__carte .carte__info .info__texte .texte__p {
+  font-size: 13.5px;
+  font-weight: 300;
+}
+.main__restaurant .container__restaurant .restaurant__carte .carte__info .info__prix {
+  font-weight: bold;
+  align-self: end;
+}
+.main__restaurant .container__restaurant .restaurant__carte .carte__info .info__icone {
+  display: none;
+}
+.main__restaurant .main__bouton {
+  text-align: center;
+}
+.main__restaurant .bouton__commander {
+  width: 50%;
+  position: relative;
+  top: -44px;
+}
+
 /*----------
     MAIN
 ----------*/

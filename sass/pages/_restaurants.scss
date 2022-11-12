@@ -1,0 +1,118 @@
+                                                        /*-----------------
+                                                            RESTAURANTS
+                                                        ------------------*/
+
+/*------------
+    HEADER
+--------------*/
+
+.header__restaurant {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+
+    a {
+        position: absolute;
+        left: 30px;
+        font-size: 20px;
+        &:visited {
+            color: black;
+        }
+    }
+}
+
+
+/*----------
+    MAIN
+-----------*/
+.main__restaurant {
+    background: $quaternaire;
+    //Image
+    .img__restaurant {
+        max-width: 100%;
+    }
+
+    //Conteneur
+    .container__restaurant {
+        background: $quaternaire;
+        position: relative;
+        top: -50px;
+        border-radius: 40px 40px 0 0;
+
+        //Titre + Icone
+        .restaurant__titre {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0 10px 15px;
+
+            h2 {
+                font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+                font-weight: normal;
+            }
+        }
+
+        //Carte
+        .restaurant__carte {
+            padding: 10px;
+
+            //Titre 
+            .carte__titre {
+                font-weight: 400;
+                font-size: 17px;
+                margin-bottom: 20px;
+
+                span {
+                    border-bottom: 3.5px solid #99E2D0;
+                    padding-bottom: 5px;
+                }
+            }
+
+            //Article 
+            .carte__info {
+                background: white;
+                margin: 15px 0;
+                padding: 10px;
+                border-radius: 15px;
+                box-shadow: 4px 4px 10px #d6d6d6;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                //Texte
+                .info__texte {
+                    //Paragraphe 
+                    .texte__p {
+                        font-size: 13.5px;
+                        font-weight: 300;
+                    }
+                }
+
+                //Prix
+                .info__prix {
+                    font-weight: bold;
+                    align-self: end;
+                }
+
+                //Icone
+                .info__icone {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    //Bouton
+    .main__bouton {
+        text-align: center;
+    }
+
+    .bouton__commander {
+        width: 50%;
+        position: relative;
+        top: -44px;
+    }
+}
