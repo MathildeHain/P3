@@ -1,0 +1,29 @@
+                                                /*---------------------------------------------------
+                                                    MEDIA QUERIES POUR LES PAGES DES RESTAURANTS
+                                                ----------------------------------------------------*/
+
+/*-------------------------
+    TABLETTE ET DESKTOP
+--------------------------*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    .container__restaurant {
+        display: flex;
+        flex-wrap: wrap;
+
+        .restaurant__titre {
+            width: 100%;
+        }
+
+        .restaurant__carte {
+            width: 30%;
+        }
+    }
+
+    .main__restaurant {
+        position: relative;
+
+        .container__restaurant {
+            position: absolute;
+        }
+    }
+}

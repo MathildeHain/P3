@@ -221,24 +221,24 @@ footer .footer__liens a p {
     padding: 10px;
   }
   /*----MAIN----*/
-  /*Top*/
-  .top .top__bouton {
+  main .top .top__bouton {
     width: 30%;
   }
-  /*Fonctionnement*/
-  .fonctionnement .fonctionnement__liste {
+  main .fonctionnement .fonctionnement__liste {
     display: flex;
   }
-  /*Restaurants*/
-  .restaurant .restaurant__articles {
-    display: flex;
-    justify-content: space-around;
+  main .restaurant .restaurant__articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
-  /*----FOOTER----*/
-  footer {
+  main .restaurant .restaurant__articles .restaurant__carte {
+    width: 45%;
+  }
+  main footer {
     padding: 30px 0;
   }
-  footer .footer__liens {
+  main footer .footer__liens {
     display: flex;
     justify-content: space-around;
   }
@@ -247,14 +247,6 @@ footer .footer__liens a p {
     TABLETTE
 ---------------*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  /*----MAIN----*/
-  /*Restaurants*/
-  .restaurant .restaurant__articles {
-    flex-wrap: wrap;
-  }
-  .restaurant .restaurant__articles .restaurant__carte {
-    width: 45%;
-  }
   /*----FOOTER----*/
   footer .footer__titre {
     padding: 0 0 15px 25px;
@@ -264,7 +256,6 @@ footer .footer__liens a p {
     DESKTOP
 --------------*/
 @media screen and (min-width: 992px) and (max-width: 1600px) {
-  /*----MAIN----*/
   /*Fonctionnement*/
   .fonctionnement .fonctionnement__liste {
     justify-content: space-around;
@@ -281,6 +272,30 @@ footer .footer__liens a p {
   /*----FOOTER----*/
   footer .footer__titre {
     display: none;
+  }
+}
+/*---------------------------------------------------
+    MEDIA QUERIES POUR LES PAGES DES RESTAURANTS
+----------------------------------------------------*/
+/*-------------------------
+    TABLETTE ET DESKTOP
+--------------------------*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container__restaurant {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container__restaurant .restaurant__titre {
+    width: 100%;
+  }
+  .container__restaurant .restaurant__carte {
+    width: 30%;
+  }
+  .main__restaurant {
+    position: relative;
+  }
+  .main__restaurant .container__restaurant {
+    position: absolute;
   }
 }
 /*-----------------
@@ -373,6 +388,9 @@ footer .footer__liens a p {
   top: -44px;
 }
 
+/*
+MOBILE
+*/
 /*----------
     MAIN
 ----------*/

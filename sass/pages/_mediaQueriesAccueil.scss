@@ -1,0 +1,107 @@
+/*-------------------------
+    TABLETTE ET DESKTOP
+--------------------------*/ 
+
+@media screen and (min-width:768px) and (max-width:1600px) {
+    /*----HEADER----*/
+    header {
+        //Titre
+        .header__titre {
+            padding: 20px;
+        }
+        //Navigation
+        .header__localisation {
+            padding: 10px;
+        }
+    }
+
+    /*----MAIN----*/
+    main {
+        //Top 
+        .top {
+            .top__bouton {
+                width: 30%;
+            }
+        }
+
+        //Fonctionnement
+        .fonctionnement {
+                //Liste (ol)
+            .fonctionnement__liste {
+                display: flex;
+            }
+        }
+
+        //Restaurant
+        .restaurant {
+            .restaurant__articles {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            
+                .restaurant__carte {
+                    width: 45%;
+                }
+            }
+        }
+
+        //FOOTER
+        footer {
+            padding: 30px 0;
+
+            .footer__liens {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+/*--------------
+    TABLETTE
+---------------*/
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    /*----FOOTER----*/
+    footer {
+        .footer__titre {
+            padding: 0 0 15px 25px;
+        }
+    }
+}
+
+
+/*-------------
+    DESKTOP
+--------------*/
+
+@media screen and (min-width:992px) and (max-width:1600px) { 
+    /*Fonctionnement*/
+    .fonctionnement {
+        //Liste (ol)
+        .fonctionnement__liste {
+            justify-content: space-around;
+            //Liste (li)
+            .liste__element {
+                width: 100%;
+                text-align-last: center;
+            }
+        }
+    }
+
+    /*Restaurants*/
+    .restaurant {
+        .restaurant__articles {
+            .restaurant__carte {
+                width: 23%;
+            }
+        }
+    }
+
+    /*----FOOTER----*/ 
+    footer {
+        .footer__titre {
+            display: none;
+        }
+    }
+}
