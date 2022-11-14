@@ -8,7 +8,7 @@
   padding: 0;
   margin: 0;
 }
-* h1, * .footer__titre {
+* h1, * .footer__titre, * .footer__titre__restaurant {
   font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
 
@@ -128,6 +128,10 @@
   width: 80%;
 }
 
+.info__prix {
+  width: 25%;
+}
+
 .carte__info {
   overflow: hidden;
 }
@@ -147,7 +151,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  width: 55px;
+  min-width: 55px;
 }
 .carte__info .info__icone i {
   transition: all 1s;
@@ -268,6 +272,7 @@ footer .footer__liens a p {
   position: absolute;
   left: 30px;
   font-size: 20px;
+  color: black;
 }
 .header__restaurant a:visited {
   color: black;
@@ -337,6 +342,9 @@ footer .footer__liens a p {
   width: 50%;
 }
 
+/*-----------
+    FOOTER
+------------*/
 /*-------------------------
     TABLETTE ET DESKTOP
 --------------------------*/
@@ -371,6 +379,15 @@ footer .footer__liens a p {
     justify-content: space-around;
   }
 }
+/*------------------------
+    TABLETTE ET DESKTOP
+-------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1700px) {
+  .footer__liens {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 /*--------------
     TABLETTE
 ---------------*/
@@ -383,7 +400,7 @@ footer .footer__liens a p {
 /*-------------
     DESKTOP
 --------------*/
-@media screen and (min-width: 992px) and (max-width: 1600px) {
+@media screen and (min-width: 992px) and (max-width: 1700px) {
   /*Fonctionnement*/
   .fonctionnement .fonctionnement__liste {
     justify-content: space-around;
@@ -443,6 +460,14 @@ footer .footer__liens a p {
     background-size: cover;
   }
 }
+/*--------------
+    TABLETTE
+---------------*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .carte__info .info__prix {
+    width: 0%;
+  }
+}
 /*------------
     DESKTOP
 -------------*/
@@ -450,6 +475,7 @@ footer .footer__liens a p {
   .container__restaurant {
     display: flex;
     flex-wrap: wrap;
+    height: 550px;
   }
   .container__restaurant .restaurant__titre {
     width: 100%;
