@@ -9,6 +9,8 @@
     position: relative;
     margin-right: 15px;
     .coeurPlein {
+        font-size: 17px;
+        padding-top: .5px;
         opacity: 0;
         position: absolute;
         transition: opacity 1s;
@@ -23,6 +25,7 @@
 
     .coeurVide {
        z-index: 1;
+       font-size: 17px;
     }
 }
 
@@ -44,29 +47,73 @@
     animation-fill-mode: backwards;
 }
 .delay1 {
-    animation-delay: 100ms;
+    animation-delay: 300ms;
 }
 .delay2 {
-  animation-delay: 200ms;
+  animation-delay: 600ms;
 }
 .delay3 {
-  animation-delay: 300ms;
+  animation-delay: 900ms;
 }
 .delay4 {
-    animation-delay: 400ms;
+    animation-delay: 1200ms;
 }
 .delay5 {
-    animation-delay: 500ms;
+    animation-delay: 1500ms;
 }
 .delay6 {
-    animation-delay: 600ms;
+    animation-delay: 1900ms;
 }
 .delay7 {
-    animation-delay: 700ms;
+    animation-delay: 2100ms;
 }
 .delay8 {
-    animation-delay: 800ms;
+    animation-delay: 2400ms;
 }
 .delay9 {
-    animation-delay: 900ms;
+    animation-delay: 2700ms;
+}
+
+
+/*-----------
+    CHECK
+------------*/
+//Réduction du texte
+.info__texte {
+    width: 74%;
+    .texte__p, .texte__titre {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 80%;
+    }
+}
+
+//Apparition du check au survol
+
+.carte__info {
+    overflow: hidden;
+    &:hover {
+        .info__icone {  
+            margin: 0;    
+            i {
+                transform: rotate(360deg);
+            }
+        }
+    }
+    .info__icone {
+        transition: all 1s ease-out;
+        background: #99E2D0;
+        color: white;
+        margin: -55px;
+        border-radius: 0 10px 10px 0;
+        height: 56px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 55px;
+        i {
+            transition: all 1s;
+        }
+    }
 }

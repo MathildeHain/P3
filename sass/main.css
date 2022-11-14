@@ -26,6 +26,8 @@
   margin-right: 15px;
 }
 .info__icone .coeurPlein {
+  font-size: 17px;
+  padding-top: 0.5px;
   opacity: 0;
   position: absolute;
   transition: opacity 1s;
@@ -39,6 +41,7 @@
 }
 .info__icone .coeurVide {
   z-index: 1;
+  font-size: 17px;
 }
 
 /*----------------------------
@@ -68,48 +71,86 @@
 }
 
 .delay1 {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
-}
-
-.delay2 {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.delay3 {
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
 
-.delay4 {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.delay5 {
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-
-.delay6 {
+.delay2 {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
+.delay3 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.delay4 {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.delay5 {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.delay6 {
+  -webkit-animation-delay: 1900ms;
+          animation-delay: 1900ms;
+}
+
 .delay7 {
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
 }
 
 .delay8 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
 }
 
 .delay9 {
-  -webkit-animation-delay: 900ms;
-          animation-delay: 900ms;
+  -webkit-animation-delay: 2700ms;
+          animation-delay: 2700ms;
+}
+
+/*-----------
+    CHECK
+------------*/
+.info__texte {
+  width: 74%;
+}
+.info__texte .texte__p, .info__texte .texte__titre {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+}
+
+.carte__info {
+  overflow: hidden;
+}
+.carte__info:hover .info__icone {
+  margin: 0;
+}
+.carte__info:hover .info__icone i {
+  transform: rotate(360deg);
+}
+.carte__info .info__icone {
+  transition: all 1s ease-out;
+  background: #99E2D0;
+  color: white;
+  margin: -55px;
+  border-radius: 0 10px 10px 0;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 55px;
+}
+.carte__info .info__icone i {
+  transition: all 1s;
 }
 
 /*-------------------
@@ -361,7 +402,6 @@ footer .footer__liens a p {
 .main__restaurant .container__restaurant .restaurant__carte .carte__info {
   background: white;
   margin: 15px 0;
-  padding: 10px;
   border-radius: 15px;
   box-shadow: 4px 4px 10px #d6d6d6;
   display: flex;
@@ -376,8 +416,8 @@ footer .footer__liens a p {
   font-weight: bold;
   align-self: end;
 }
-.main__restaurant .container__restaurant .restaurant__carte .carte__info .info__icone {
-  display: none;
+.main__restaurant .container__restaurant .restaurant__carte .carte__info .info__texte, .main__restaurant .container__restaurant .restaurant__carte .carte__info .info__prix {
+  padding: 10px;
 }
 .main__restaurant .main__bouton {
   text-align: center;

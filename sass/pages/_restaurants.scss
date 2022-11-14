@@ -75,7 +75,6 @@
             .carte__info {
                 background: white;
                 margin: 15px 0;
-                padding: 10px;
                 border-radius: 15px;
                 box-shadow: 4px 4px 10px #d6d6d6;
                 display: flex;
@@ -97,9 +96,9 @@
                     align-self: end;
                 }
 
-                //Icone
-                .info__icone {
-                    display: none;
+                //Texte et prix 
+                .info__texte, .info__prix {
+                    padding: 10px;
                 }
             }
         }
