@@ -143,7 +143,7 @@
   color: white;
   margin: -55px;
   border-radius: 0 10px 10px 0;
-  height: 56px;
+  height: 55px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -250,95 +250,6 @@ footer .footer__liens a p {
   margin-left: 10px;
 }
 
-/*-------------------------
-    TABLETTE ET DESKTOP
---------------------------*/
-@media screen and (min-width: 768px) and (max-width: 1600px) {
-  /*----HEADER----*/
-  header .header__titre {
-    padding: 20px;
-  }
-  header .header__localisation {
-    padding: 10px;
-  }
-  /*----MAIN----*/
-  main .top .top__bouton {
-    width: 30%;
-  }
-  main .fonctionnement .fonctionnement__liste {
-    display: flex;
-  }
-  main .restaurant .restaurant__articles {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  main .restaurant .restaurant__articles .restaurant__carte {
-    width: 45%;
-  }
-  main footer {
-    padding: 30px 0;
-  }
-  main footer .footer__liens {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-/*--------------
-    TABLETTE
----------------*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  /*----FOOTER----*/
-  footer .footer__titre {
-    padding: 0 0 15px 25px;
-  }
-}
-/*-------------
-    DESKTOP
---------------*/
-@media screen and (min-width: 992px) and (max-width: 1600px) {
-  /*Fonctionnement*/
-  .fonctionnement .fonctionnement__liste {
-    justify-content: space-around;
-  }
-  .fonctionnement .fonctionnement__liste .liste__element {
-    width: 100%;
-    -moz-text-align-last: center;
-         text-align-last: center;
-  }
-  /*Restaurants*/
-  .restaurant .restaurant__articles .restaurant__carte {
-    width: 23%;
-  }
-  /*----FOOTER----*/
-  footer .footer__titre {
-    display: none;
-  }
-}
-/*---------------------------------------------------
-    MEDIA QUERIES POUR LES PAGES DES RESTAURANTS
-----------------------------------------------------*/
-/*-------------------------
-    TABLETTE ET DESKTOP
---------------------------*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .container__restaurant {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .container__restaurant .restaurant__titre {
-    width: 100%;
-  }
-  .container__restaurant .restaurant__carte {
-    width: 30%;
-  }
-  .main__restaurant {
-    position: relative;
-  }
-  .main__restaurant .container__restaurant {
-    position: absolute;
-  }
-}
 /*-----------------
     RESTAURANTS
 ------------------*/
@@ -424,13 +335,132 @@ footer .footer__liens a p {
 }
 .main__restaurant .bouton__commander {
   width: 50%;
-  position: relative;
-  top: -44px;
 }
 
-/*
-MOBILE
-*/
+/*-------------------------
+    TABLETTE ET DESKTOP
+--------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+  /*----HEADER----*/
+  header .header__titre {
+    padding: 20px;
+  }
+  header .header__localisation {
+    padding: 10px;
+  }
+  /*----MAIN----*/
+  main .top .top__bouton {
+    width: 30%;
+  }
+  main .fonctionnement .fonctionnement__liste {
+    display: flex;
+  }
+  main .restaurant .restaurant__articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  main .restaurant .restaurant__articles .restaurant__carte {
+    width: 45%;
+  }
+  main footer {
+    padding: 30px 0;
+  }
+  main footer .footer__liens {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+/*--------------
+    TABLETTE
+---------------*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /*----FOOTER----*/
+  footer .footer__titre {
+    padding: 0 0 15px 25px;
+  }
+}
+/*-------------
+    DESKTOP
+--------------*/
+@media screen and (min-width: 992px) and (max-width: 1600px) {
+  /*Fonctionnement*/
+  .fonctionnement .fonctionnement__liste {
+    justify-content: space-around;
+  }
+  .fonctionnement .fonctionnement__liste .liste__element {
+    width: 100%;
+    -moz-text-align-last: center;
+         text-align-last: center;
+  }
+  /*Restaurants*/
+  .restaurant .restaurant__articles .restaurant__carte {
+    width: 23%;
+  }
+  /*----FOOTER----*/
+  footer .footer__titre {
+    display: none;
+  }
+}
+/*---------------------------------------------------
+    MEDIA QUERIES POUR LES PAGES DES RESTAURANTS
+----------------------------------------------------*/
+/*-------------------------
+    TABLETTE ET DESKTOP
+--------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1700px) {
+  .main__restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__restaurant .img__restaurant {
+    display: none;
+  }
+  .main__restaurant .container__restaurant {
+    width: 80%;
+    margin: 80px 0;
+    position: initial;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
+  }
+  .main__restaurant .container__restaurant .main__bouton button {
+    margin-bottom: 25px;
+  }
+  .gout {
+    background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center fixed;
+  }
+  .french {
+    background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat center fixed;
+  }
+  .enchantee {
+    background: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat center fixed;
+  }
+  .sens {
+    background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat center fixed;
+  }
+  .background {
+    background-size: cover;
+  }
+}
+/*------------
+    DESKTOP
+-------------*/
+@media screen and (min-width: 992px) and (max-width: 1700px) {
+  .container__restaurant {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container__restaurant .restaurant__titre {
+    width: 100%;
+  }
+  .container__restaurant .restaurant__carte {
+    width: 30%;
+  }
+  .container__restaurant .main__bouton {
+    width: 100%;
+  }
+}
 /*----------
     MAIN
 ----------*/
