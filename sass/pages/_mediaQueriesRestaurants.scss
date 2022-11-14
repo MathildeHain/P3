@@ -5,25 +5,86 @@
 /*-------------------------
     TABLETTE ET DESKTOP
 --------------------------*/
-@media screen and (min-width:768px) and (max-width:992px) {
+@media screen and (min-width:768px) and (max-width:1700px) {
+.main__restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //Masquage de l'image
+    .img__restaurant {
+        display: none;
+    }
+
     .container__restaurant {
-        display: flex;
-        flex-wrap: wrap;
-
-        .restaurant__titre {
-            width: 100%;
-        }
-
-        .restaurant__carte {
-            width: 30%;
-        }
-    }
-
-    .main__restaurant {
-        position: relative;
-
-        .container__restaurant {
-            position: absolute;
+        width: 80%;
+        margin: 80px 0;
+        position: initial;
+        background: rgba(255,255,255,0.9);
+        border-radius: 40px;
+        .main__bouton {
+            button {
+                margin-bottom: 25px;
+            }
         }
     }
+}
+//Affichage de l'image en background
+    //La palette du goût
+    .gout {
+        background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center fixed; 
+    }
+    //A la française 
+    .french {
+        background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat center fixed;
+        
+    }
+    //La note enchantée
+    .enchantee {
+        background: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat center fixed;
+    }
+    //Le délice des sens
+    .sens {
+        background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat center fixed;
+    }
+    //Amélioration du visuel de l'image
+    .background {
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
+
+
+/*--------------
+    TABLETTE
+---------------*/
+@media screen and (min-width:768px) and (max-width:991px) {
+.carte__info {
+    .info__prix {
+        width: 0%;
+    }
+}
+}
+
+
+/*------------
+    DESKTOP
+-------------*/
+@media screen and (min-width:992px) and (max-width:1700px) {
+.container__restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+
+    .restaurant__titre {
+        width: 100%;
+    }
+
+    .restaurant__carte {
+        width: 30%;
+    }
+
+    .main__bouton {
+        width: 100%;
+    }
+}
 }

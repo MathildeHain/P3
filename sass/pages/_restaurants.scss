@@ -18,6 +18,7 @@
         position: absolute;
         left: 30px;
         font-size: 20px;
+        color: black;
         &:visited {
             color: black;
         }
@@ -111,7 +112,13 @@
 
     .bouton__commander {
         width: 50%;
-        position: relative;
-        top: -44px;
     }
+}
+
+
+/*-----------
+    FOOTER
+------------*/
+.footer__restaurant {
+    
 }
