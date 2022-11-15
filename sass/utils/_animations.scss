@@ -7,7 +7,7 @@
 -------------*/
 @keyframes disappear {
     to {
-        opacity: 0;
+        visibility: hidden;
     }
 }
 

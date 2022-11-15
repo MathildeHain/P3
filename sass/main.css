@@ -23,12 +23,12 @@
 -------------*/
 @-webkit-keyframes disappear {
   to {
-    opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes disappear {
   to {
-    opacity: 0;
+    visibility: hidden;
   }
 }
 @-webkit-keyframes spin {
@@ -551,6 +551,7 @@ footer .footer__liens a p {
   margin: 25px;
   border-radius: 20px;
   box-shadow: 4px 4px 10px #d6d6d6;
+  transition: background 0.3s;
 }
 .fonctionnement .fonctionnement__liste .liste__element:hover {
   background: #f5edff;
