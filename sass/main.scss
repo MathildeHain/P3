@@ -52,6 +52,7 @@
             margin: 25px;
             border-radius: 20px;
             box-shadow: 4px 4px 10px #d6d6d6;   
+            transition: background .3s;
             //Changement de couleur du fond au survol
             &:hover {
                 background: #f5edff;

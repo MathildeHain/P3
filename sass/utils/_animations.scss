@@ -2,6 +2,42 @@
                                                                 ANIMATIONS
                                                             -----------------*/
 
+/*------------
+    LOADING
+-------------*/
+@keyframes disappear {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    inset: 0;
+    z-index: 2;
+    background: white;
+    opacity: .9;
+    animation: disappear 1s 3s forwards;
+    align-items: center;
+    i {
+        animation: spin 1s infinite;
+        background: linear-gradient(-10deg, #9356DC, #FF79DA);
+        background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+}
+
+
 /*-----------
     COEUR
 ------------*/
@@ -42,36 +78,14 @@
     }
 }
 
+
 .carte__info {
-    animation: fadein 1s;
-    animation-fill-mode: backwards;
-}
-.delay1 {
-    animation-delay: 300ms;
-}
-.delay2 {
-  animation-delay: 600ms;
-}
-.delay3 {
-  animation-delay: 900ms;
-}
-.delay4 {
-    animation-delay: 1200ms;
-}
-.delay5 {
-    animation-delay: 1500ms;
-}
-.delay6 {
-    animation-delay: 1900ms;
-}
-.delay7 {
-    animation-delay: 2100ms;
-}
-.delay8 {
-    animation-delay: 2400ms;
-}
-.delay9 {
-    animation-delay: 2700ms;
+    animation: fadein 1s backwards;
+    @for $i from 1 through 9 {
+        &:nth-child(#{$i}) {
+            animation-delay: ($i * 300ms);
+        }
+    }
 }
 
 
