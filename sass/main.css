@@ -18,6 +18,51 @@
 /*---------------
     ANIMATIONS
 -----------------*/
+/*------------
+    LOADING
+-------------*/
+@-webkit-keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes disappear {
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  inset: 0;
+  z-index: 2;
+  background: white;
+  opacity: 0.9;
+  -webkit-animation: disappear 1s 3s forwards;
+          animation: disappear 1s 3s forwards;
+  align-items: center;
+}
+.loading i {
+  -webkit-animation: spin 1s infinite;
+          animation: spin 1s infinite;
+  background: linear-gradient(-10deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*-----------
     COEUR
 ------------*/
@@ -64,10 +109,8 @@
   }
 }
 .carte__info {
-  -webkit-animation: fadein 1s;
-          animation: fadein 1s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  -webkit-animation: fadein 1s backwards;
+          animation: fadein 1s backwards;
 }
 .carte__info:nth-child(1) {
   -webkit-animation-delay: 300ms;
